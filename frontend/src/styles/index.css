@@ -1,0 +1,60 @@
+@import './tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html,
+  body,
+  #root {
+    @apply h-full;
+  }
+
+  body {
+    @apply m-0 bg-canvas text-ink font-sans antialiased;
+    background-image:
+      radial-gradient(circle at top left, rgba(29, 78, 216, 0.06), transparent 28%),
+      linear-gradient(180deg, rgba(255, 253, 248, 0.9), rgba(244, 241, 234, 1));
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-panel border border-line bg-panel shadow-panel;
+  }
+
+  .panel-title {
+    @apply text-sm font-semibold uppercase tracking-[0.12em] text-muted;
+  }
+
+  .scroll-panel {
+    scrollbar-gutter: stable;
+  }
+
+  .scroll-panel::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .scroll-panel::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scroll-panel::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.5);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+}

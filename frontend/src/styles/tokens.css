@@ -1,0 +1,13 @@
+:root {
+  --color-canvas: #f4f1ea;
+  --color-panel: #fffdf8;
+  --color-ink: #1f2937;
+  --color-muted: #6b7280;
+  --color-line: #e2ddd1;
+  --color-accent: #1d4ed8;
+  --color-accent-soft: #e7eefc;
+  --color-success: #0f766e;
+  --color-warning: #b45309;
+  --color-danger: #b91c1c;
+}
+

@@ -1,0 +1,45 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Databases
+*.db
+*.sqlite
+
+# Uploads / runtime artifacts
+backend/uploads/
+backend/tests/test_uploads/
+
+# Node
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Env files
+.env
+*.env.local
+**/.env
+**/.env.*
+!**/.env.example
+
+# Secrets / credentials
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+*credential*
+*secret*
+*token*
+
+# User uploaded/source files
+uploads/
+**/uploads/
+backend/test_uploads/
+backend/tests/test_uploads/
